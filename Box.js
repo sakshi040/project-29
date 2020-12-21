@@ -2,7 +2,7 @@ class Box {
     constructor(x, y, width, height) {
       var options = {
           'restitution':0.8,
-          'friction':0.3,
+          'friction':0.30,
           'density':1.0
       }
       this.body = Bodies.rectangle(x, y, width, height, options);
@@ -20,7 +20,7 @@ class Box {
       rectMode(CENTER);
       strokeWeight(4)
       stroke("green")
-      fill(255);
+      fill(400);
       rect(0, 0, this.width, this.height);
       pop();
     }
